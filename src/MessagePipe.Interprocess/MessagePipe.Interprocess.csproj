@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFrameworks>net6.0</TargetFrameworks>
+        <TargetFrameworks>net7.0</TargetFrameworks>
         <WarningsAsErrors>true</WarningsAsErrors>
         <Configurations>Debug;Release;</Configurations>
 
@@ -20,11 +20,8 @@
         <PackageReference Include="MessagePack" Version="2.4.59" />
         <PackageReference Include="System.IO.Pipelines" Version="7.0.0" />
         <ProjectReference Include="..\MessagePipe\MessagePipe.csproj" />
-    </ItemGroup>
-
-    <ItemGroup Condition="$(TargetFramework) == 'netstandard2.0'">
-        <PackageReference Include="Microsoft.Bcl.AsyncInterfaces" Version="6.0.0" />
-        <PackageReference Include="System.Threading.Channels" Version="6.0.0" />
+        <PackageReference Include="Microsoft.Bcl.AsyncInterfaces" Version="7.0.0" />
+        <PackageReference Include="System.Threading.Channels" Version="7.0.0" />
     </ItemGroup>
 
     <!-- Copy files for Unity -->
